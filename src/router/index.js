@@ -12,11 +12,12 @@ const routes = [
         name: '1-1',
         component: () => import('../views/basics/index.vue')
       },
-      {
-        path: '2-1',
-        name: '2-1',
-        component: () => import('../views/vector-data/index.vue')
-      },
+      { path: '2-1', name: '2-1', component: () => import('../views/vector-data/2-1.vue') },
+      { path: '2-2', name: '2-2', component: () => import('../views/vector-data/2-2.vue') },
+      { path: '2-3', name: '2-3', component: () => import('../views/vector-data/2-3.vue') },
+      { path: '2-4', name: '2-4', component: () => import('../views/vector-data/2-4.vue') },
+      { path: '2-5', name: '2-5', component: () => import('../views/vector-data/2-5.vue') },
+      { path: '2-6', name: '2-6', component: () => import('../views/vector-data/2-6.vue') },
       {
         path: '3-1',
         name: '3-1',

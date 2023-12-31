@@ -35,7 +35,12 @@ menus.value = [
   {
     label: 'Vector Data',
     children: [
-      { label: 'index', index: '/2-1' }
+      { label: '2-1', index: '/2-1' },
+      { label: 'Drag', index: '/2-2' },
+      { label: 'Modify', index: '/2-3' },
+      { label: 'Draw', index: '/2-4' },
+      { label: 'Snap', index: '/2-5' },
+      { label: 'Colorful', index: '/2-6' }
     ]
   },
   {
