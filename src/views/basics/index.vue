@@ -1,16 +1,33 @@
 <template>
-  <div class="content-inner">111</div>
+  <div id="map-container-1"
+       class="page-wrap"></div>
 </template>
 
 <script setup>
-// import a from ''
+import OSM from 'ol/source/OSM'
+import TileLayer from 'ol/layer/Tile'
+import { Map, View } from 'ol'
+import { fromLonLat } from 'ol/proj'
 
-// const props = defineProps()
-// const value = ref()
+const map = ref(null)
+function init () {
+  map.value = new Map({
+    target: 'map-container-1',
+    layers: [
+      new TileLayer({
+        source: new OSM()
+      })
+    ],
+    view: new View({
+      center: fromLonLat([0, 0]),
+      zoom: 2
+    })
+  })
+}
 
-// function fn () {}
-
-onMounted(() => { })
+onMounted(() => {
+  init()
+})
 onBeforeUnmount(() => { })
 </script>
 
